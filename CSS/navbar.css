@@ -1,0 +1,24 @@
+.navigation a {
+  width: 36px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat; /*for not repeating bg image */
+}
+
+.navigation__item-home {
+  background-image: url(../images/home.png);
+}
+
+.navigation__item-home--filled {
+  background-image: url(../images/home_filled.png);
+}
+
+.navigation__item-bookmark {
+  background-image: url(../images/bookmark.png);
+}
+
+.navigation__item-profile {
+  background-image: url(../images/profile.png);
+}
