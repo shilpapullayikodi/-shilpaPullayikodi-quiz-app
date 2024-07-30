@@ -26,3 +26,7 @@
 .navigation__item-profile {
   background-image: url(../images/profile.png);
 }
+
+.navigation__item-profile--filled {
+  background-image: url(../images/profile_filled.png);
+}
