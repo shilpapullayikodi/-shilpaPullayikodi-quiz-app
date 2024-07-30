@@ -19,6 +19,10 @@
   background-image: url(../images/bookmark.png);
 }
 
+.navigation__item-bookmark--filled {
+  background-image: url(../images/bookmark_filled.png);
+}
+
 .navigation__item-profile {
   background-image: url(../images/profile.png);
 }
