@@ -1,0 +1,42 @@
+.profile-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-section__picture {
+  width: 35%;
+  border: 0px solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-section__picture img {
+  width: 100%;
+}
+
+.profile-section__name {
+  font-size: larger;
+  font-weight: bold;
+  margin: auto 0px;
+}
+
+.about__counter {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+}
+
+.about__counter__item {
+  width: 10%;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.about__counter__item img {
+  width: 100%;
+}
+
+.about__counter__item span {
+  margin: auto 0px;
+}
