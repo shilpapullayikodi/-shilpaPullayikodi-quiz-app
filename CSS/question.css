@@ -1,0 +1,28 @@
+.question_card {
+  position: relative;
+  background-color: lightgray;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+}
+
+.question_card-2 {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+  text-align: center;
+  background-color: lightgray;
+}
+.question_card-3,
+.question_card-4 {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+  text-align: center;
+  background-color: lightgray;
+}

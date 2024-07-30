@@ -1,3 +1,4 @@
+@import url("./profile.css");
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@ body {
   flex-direction: column;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -14,6 +16,9 @@ header {
 }
 h1 {
   text-align: center;
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
 }
 main {
   margin: 20px;
@@ -48,6 +53,7 @@ main {
 }
 
 .question_card-2 {
+  position: relative;
   border: 1px solid black;
   padding: 20px;
   margin-top: 20px;
@@ -58,6 +64,7 @@ main {
 }
 .question_card-3,
 .question_card-4 {
+  position: relative;
   border: 1px solid black;
   padding: 20px;
   margin-top: 20px;
@@ -83,11 +90,17 @@ nav svg {
   height: 32px;
   stroke: #171515;
   fill: none;
-  transition: stroke 0.3s ease, fill 0.3s ease;
 }
 svg:hover {
   stroke: #7a19cf;
   fill: #007bff;
 }
-svg.flex {
+.flex {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  stroke: #171515;
+  fill: 1px;
 }
