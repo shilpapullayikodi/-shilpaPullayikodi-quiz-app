@@ -19,16 +19,16 @@
                     <button class="question-cards__question-card__bookmark__button">
                     </button>
                 </section>
-                <section class="question-cards__question-card__question">
+                <section class="question-cards__question-card__question" data-js="question">
                     <p>What does CSS stand for?</p>
                 </section>
-                <button class="question-cards__question-card__button" type="button">
+                <button class="question-cards__question-card__button" data-js="js-show-button-1" type="button">
                     Show answer
                 </button>
-                <button class="question-cards__question-card__button--hidden" type="button">
+                <button class="question-cards__question-card__button--hidden" data-js="js-hide-button-1" type="button">
                     Hide answer
                 </button>
-                <section class="question-cards__question-card__answer--hidden">     
+                <section class="question-cards__question-card__answer--hidden" data-js="show-answer-1">     
                     <p>
                         Cascading Style Sheets
                     </p>
@@ -161,4 +161,5 @@
       </footer>
    
   </body>
+  <script src="./js/question-card.js"></script>
 </html>
