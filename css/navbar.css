@@ -38,8 +38,8 @@
 }
 
 .navigation__item-form {
-  background-image: url(../images/circle_plus.svg);
+  background-image: url(../images/add.png);
 }
 .navigation__item-form--filled {
-  background-image: url(../images/sqaure_sqaure.svg);
+  background-image: url(../images/add_filled.png);
 }

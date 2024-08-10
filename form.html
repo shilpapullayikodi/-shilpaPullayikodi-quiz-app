@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-app</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-    <section>
-      <section class="header">
+      <section>
+        <section class="header">
           <div class="header__title">Quiz App</div>
-      </section> 
-    </section>
-<section class = "form-container">
-    <form class = "form-container__form-body">
-    <label for="your_question">Your Question:</label>
-  <textarea
-      name="your_question"
-      id="your_question"  cols="60" rows="10" required></textarea>
+        </section>
+      </section>
+      <section class="form-container">
+        <form class="form-container__form-body" data-js="form">
+          <div>
+            <label for="your_question">Your Question:</label>
+            <textarea
+              name="your_question"
+              id="your_question"
+              maxlength="150"
+              required
+            ></textarea>
 
-<label for="your_answer">Your Answer:</label>
-<textarea
-    name="your_answer"
-    id="your_answer" cols="60" rows="10" ></textarea>
-    
+            <p id="characters-left"></p>
+          </div>
+          <div>
+            <label for="your_answer">Your Answer:</label>
+            <textarea name="your_answer" id="your_answer"></textarea>
+            <span id="characters-left-answer"></span>
+          </div>
+          <div>
+            <label for="tag">Tag:</label>
+            <input type="text" id="tag" name="tag" />
+          </div>
 
-    <label for="tag">Tag:</label>
-    <input type="text" id = "tag" name = "tag"><br>
-<button type = "submit" id="submit">Submit</button>
- </form>
-</section>
-
-
-  </main>
-      
-</body>
-<footer>
+          <button type="submit" id="submit" data-js="submit-button">
+            Submit
+          </button>
+        </form>
+      </section>
+      <section class="question-cards" data-js="question-cards"></section>
+    </main>
+  </body>
+  <footer>
     <nav class="navigation">
       <a href="./index.html" class="navigation__item-home"> </a>
 
       <a href="./bookmark.html" class="navigation__item-bookmark"> </a>
 
-      <a href = "#" class = "navigation__item-form--filled"> </a>
+      <a href="#" class="navigation__item-form--filled"> </a>
 
       <a href="./profile.html" class="navigation__item-profile"> </a>
-     
     </nav>
   </footer>
-</body>
-<script src="./js/question-card.js"></script>
-</html>
-
+  <script src="/js/form.js"></script>
 </html>
