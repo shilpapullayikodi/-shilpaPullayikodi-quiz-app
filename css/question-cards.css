@@ -39,6 +39,12 @@
   margin: 10px;
   border-radius: 20px;
   font-size: large;
+  box-shadow: 0 3px #8c8585;
+  transform: translateY(4px);
+  background-color: rgb(57, 55, 108);
+  color: azure;
+  font-style: italic;
+  font-size: small;
 }
 
 .question-cards__question-card__button:hover {

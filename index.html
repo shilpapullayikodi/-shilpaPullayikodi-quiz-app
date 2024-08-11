@@ -2,163 +2,253 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Quiz-app</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-js="body">
     <main>
-      <section>
-        <section class="header">
-            <div class="header__title">Quiz App</div>
+      <section class="header">
+        <div class="header__title">Quiz App</div>
+      </section>
+      <section class="question-cards">
+        <!---Question 1-->
+        <section class="question-cards__question-card">
+          <section
+            class="question-cards__question-card__bookmark"
+            data-js="book-mark-template"
+          >
+            <button
+              class="question-cards__question-card__bookmark__button"
+              data-js="js-bookmark"
+            ></button>
+          </section>
+          <section
+            class="question-cards__question-card__question"
+            data-js="question"
+          >
+            <p>What does CSS stand for?</p>
+          </section>
+          <button
+            class="question-cards__question-card__button"
+            data-js="js-show-button-1"
+            type="button"
+          >
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            data-js="js-hide-button-1"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section
+            class="question-cards__question-card__answer--hidden"
+            data-js="show-answer-1"
+          >
+            <p>Cascading Style Sheets</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
         </section>
-        
-        <section class="question-cards">
-            <section class="question-cards__question-card">
-                <section class="question-cards__question-card__bookmark">
-                    <button class="question-cards__question-card__bookmark__button">
-                    </button>
-                </section>
-                <section class="question-cards__question-card__question">
-                    <p>What does CSS stand for?</p>
-                </section>
-                <button class="question-cards__question-card__button" type="button">
-                    Show answer
-                </button>
-                <button class="question-cards__question-card__button--hidden" type="button">
-                    Hide answer
-                </button>
-                <section class="question-cards__question-card__answer--hidden">     
-                    <p>
-                        Cascading Style Sheets
-                    </p>
-                </section>
-                <section class="question-cards__question-card__tags">
-                    <a href="#html">#html</a>
-                    <a href="#html">#css</a>
-                    <a href="#html">#quiz</a>
-                </section>
-            </section>
-
-            <section class="question-cards__question-card">
-                <section class="question-cards__question-card__bookmark">
-                    <button class="question-cards__question-card__bookmark__button">        <!--for empty state-->
-                    </button>
-                </section>
-                <section class="question-cards__question-card__question">
-                    <p>Which CSS property is used to change the text color of an element?</p>
-                </section>
-                <button class="question-cards__question-card__button--hidden" type="button">
-                    Show answer
-                </button>
-                <button class="question-cards__question-card__button" type="button">
-                    Hide answer
-                </button>
-                <section class="question-cards__question-card__answer">
-                    <p>
-                        color
-                    </p>
-                </section>
-                <section class="question-cards__question-card__tags">
-                    <a href="#html">#html</a>
-                    <a href="#html">#css</a>
-                    <a href="#html">#quiz</a>
-                </section>
-            </section>
-
-            <section class="question-cards__question-card">
-                <section class="question-cards__question-card__bookmark">       
-                    <button class="question-cards__question-card__bookmark__button--filled">      <!--for filled state-->
-                    </button>
-                </section>
-                <section class="question-cards__question-card__question">
-                    <p>What is the most widely used web browser in the world?</p>
-                </section>
-                <button class="question-cards__question-card__button" type="button">
-                    Show answer
-                </button>
-                <button class="question-cards__question-card__button--hidden" type="button">
-                    Hide answer
-                </button>
-                <section class="question-cards__question-card__answer--hidden">
-
-                    <p>
-                        Google Chrome
-                    </p>
-                </section>
-                <section class="question-cards__question-card__tags">
-                    <a href="#html">#html</a>
-                    <a href="#html">#css</a>
-                    <a href="#html">#quiz</a>
-                </section>
-            </section>
-
-            <section class="question-cards__question-card">
-                <section class="question-cards__question-card__bookmark">
-                    <button class="question-cards__question-card__bookmark__button--filled">
-                    </button>
-                </section>
-                <section class="question-cards__question-card__question">
-                    <p>What is the maximum number of characters allowed in a tweet on Twitter?</p>
-                </section>
-                <button class="question-cards__question-card__button" type="button">
-                    Show answer
-                </button>
-                <button class="question-cards__question-card__button--hidden" type="button">
-                    Hide answer
-                </button>
-                <section class="question-cards__question-card__answer--hidden">     
-                    <p>
-                        280 characters (formerly 140 characters)
-                    </p>
-                </section>
-                <section class="question-cards__question-card__tags">
-                    <a href="#html">#html</a>
-                    <a href="#html">#css</a>
-                    <a href="#html">#quiz</a>
-                </section>
-            </section>
-
-            <section class="question-cards__question-card">
-                <section class="question-cards__question-card__bookmark">       
-                    <button class="question-cards__question-card__bookmark__button--filled">      <!--for filled state-->
-                    </button>
-                </section>
-                <section class="question-cards__question-card__question">
-                    <p>What is the name of the technology that allows devices to connect to the internet without the need for physical cables?</p>
-                </section>
-                <button class="question-cards__question-card__button" type="button">
-                    Show answer
-                </button>
-                <button class="question-cards__question-card__button--hidden" type="button">
-                    Hide answer
-                </button>
-                <section class="question-cards__question-card__answer--hidden">
-
-                    <p>
-                        Wi-Fi (Wireless Fidelity)
-                    </p>
-                </section>
-                <section class="question-cards__question-card__tags">
-                    <a href="#html">#html</a>
-                    <a href="#html">#css</a>
-                    <a href="#html">#quiz</a>
-                </section>
-            </section>
+        <!-----Question-2--------->
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button class="question-cards__question-card__bookmark__button">
+              <!--for empty state-->
+            </button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>
+              Which CSS property is used to change the text color of an element?
+            </p>
+          </section>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Show answer
+          </button>
+          <button class="question-cards__question-card__button" type="button">
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer">
+            <p>color</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
         </section>
+        <!--Question-3--for filled state-->
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button
+              class="question-cards__question-card__bookmark__button--filled"
+            ></button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>What is the most widely used web browser in the world?</p>
+          </section>
+          <button class="question-cards__question-card__button" type="button">
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer--hidden">
+            <p>Google Chrome</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
+        </section>
+        <!------Question-4------------>
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button
+              class="question-cards__question-card__bookmark__button--filled"
+            ></button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>
+              What is the maximum number of characters allowed in a tweet on
+              Twitter?
+            </p>
+          </section>
+          <button class="question-cards__question-card__button" type="button">
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer--hidden">
+            <p>280 characters (formerly 140 characters)</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
+        </section>
+        <!--Question-5-------for filled state-->
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button
+              class="question-cards__question-card__bookmark__button--filled"
+            ></button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>
+              What is the name of the technology that allows devices to connect
+              to the internet without the need for physical cables?
+            </p>
+          </section>
+          <button class="question-cards__question-card__button" type="button">
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer--hidden">
+            <p>Wi-Fi (Wireless Fidelity)</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
+        </section>
+        <!--Question-6-------for filled state-->
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button
+              class="question-cards__question-card__bookmark__button"
+            ></button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>
+              In CSS, what property is used to control the spacing between lines
+              of text within an element?
+            </p>
+          </section>
+          <button class="question-cards__question-card__button" type="button">
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer--hidden">
+            <p>line-height</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
+        </section>
+        <!------Question-7------>
+
+        <section class="question-cards__question-card">
+          <section class="question-cards__question-card__bookmark">
+            <button
+              class="question-cards__question-card__bookmark__button"
+            ></button>
+          </section>
+          <section class="question-cards__question-card__question">
+            <p>What does the acronym "WWW" stand for?</p>
+          </section>
+          <button class="question-cards__question-card__button" type="button">
+            Show answer
+          </button>
+          <button
+            class="question-cards__question-card__button--hidden"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <section class="question-cards__question-card__answer--hidden">
+            <p>World Wide Web</p>
+          </section>
+          <section class="question-cards__question-card__tags">
+            <a href="#html">#html</a>
+            <a href="#html">#css</a>
+            <a href="#html">#quiz</a>
+          </section>
+        </section>
+      </section>
     </main>
-      <footer>
-        <nav class="navigation">
-            <a href="#" class="navigation__item-home--filled">
-            </a>
+    <footer>
+      <nav class="navigation">
+        <a href="#" class="navigation__item-home--filled"> </a>
 
-            <a href="./bookmark.html" class="navigation__item-bookmark">
-            </a>
+        <a href="./bookmark.html" class="navigation__item-bookmark"> </a>
 
-            <a href="./profile.html" class="navigation__item-profile">
-            </a>
-        </nav>
-      </footer>
-   
+        <a href="./form.html" class="navigation__item-form"> </a>
+
+        <a href="./profile.html" class="navigation__item-profile"> </a>
+      </nav>
+    </footer>
   </body>
+  <script src="./js/question-card.js"></script>
+  <script src="./js/bookmark.js"></script>
 </html>

@@ -1,0 +1,40 @@
+.form-container__form-body label {
+  width: 100%;
+  margin: 2px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-container__form-body__input-section {
+  margin: 18px auto;
+}
+
+.your_question__characters-left,
+.your_answer__characters-left {
+  align-items: center;
+  font-style: italic;
+  font-size: small;
+  color: gray;
+  display: flex;
+  justify-content: right;
+}
+.form-container__form-body__your_question,
+.form-container__form-body__your_answer,
+.form-container__form-body__tag {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.form-container__form-body__submit {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 3px #8c8585;
+  transform: translateY(4px);
+  background-color: rgb(126, 50, 117);
+  color: azure;
+  font-style: italic;
+}

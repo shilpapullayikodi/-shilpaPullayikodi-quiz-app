@@ -36,3 +36,10 @@
 .navigation__item-profile--filled {
   background-image: url(../images/profile_filled.png);
 }
+
+.navigation__item-form {
+  background-image: url(../images/add.png);
+}
+.navigation__item-form--filled {
+  background-image: url(../images/add_filled.png);
+}

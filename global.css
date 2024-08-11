@@ -21,6 +21,7 @@ h1 {
 }
 main {
   margin: 20px;
+  margin-bottom: 50px;
   box-sizing: content-box;
   padding: 20px;
   border: solid black;
@@ -35,4 +36,8 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+.dark {
+  background-color: black;
+  color: white;
 }

@@ -2,68 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Quiz-app</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-js="body">
     <main>
-      <section>
-        <section class="header">
-            <div class="header__title">Quiz App</div>
+      <section class="header">
+        <div class="header__title">Quiz App</div>
+      </section>
+
+      <section class="profile-section">
+        <section class="profile-section__picture">
+          <img src="./images/shilpa.jpg" />
         </section>
+        <section class="profile-section__name">Shilpa Pullayikodi</section>
+      </section>
 
-
-
-        <section class="profile-section">
-          <section class="profile-section__picture">
-            <img src="./images/shilpa.jpg">
+      <section class="about">
+        <h3>About Me</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries,
+        </p>
+        <section class="about__counter">
+          <section class="about__counter__item">
+            <img src="./images/question.png" />
+            <span> 14 </span>
           </section>
-          <section class="profile-section__name">
-            Shilpa Pullayikodi
-          </section>
-        </section>
-
-        <section class="about">
-          <h3>About Me</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-          </p>
-          <section class="about__counter">
-            <section class="about__counter__item">
-              <img src="./images/question.png" />
-              <span> 14 </span>
-            </section>
-            <section class="about__counter__item">
-              <img src="./images/bookmark_filled.png" />
-              <span> 14 </span>
-            </section>
+          <section class="about__counter__item">
+            <img src="./images/bookmark_filled.png" />
+            <span> 14 </span>
           </section>
         </section>
+      </section>
 
-        <section class="settings">
-          <h3>Settings</h3>
-          <section class="settings__item">
-            <input type="checkbox" id="switch" class="checkbox" />
-            <label for="switch" class="toggle">Dark Mode</label>
-          </section>
+      <section class="settings">
+        <h3>Settings</h3>
+        <section class="settings__item">
+          <label for="switch" class="toggle">Dark Mode</label>
+          <label class="switch" id="switch-id" data-js="toggle-darkmode">
+            <input
+              type="checkbox"
+              id="switch"
+              class="checkbox"
+              onclick="toggleDark();"
+            />
+            <span class="toggle round"></span>
+          </label>
         </section>
-
-
-
+      </section>
     </main>
-      <footer>
-        <nav class="navigation">
-            <a href="./index.html" class="navigation__item-home">
-            </a>
+    <footer>
+      <nav class="navigation">
+        <a href="./index.html" class="navigation__item-home"> </a>
 
-            <a href="./bookmark.html" class="navigation__item-bookmark">
-            </a>
-
-            <a href="#" class="navigation__item-profile--filled">
-            </a>
-        </nav>
-      </footer>
-   
+        <a href="./bookmark.html" class="navigation__item-bookmark"> </a>
+        <a href="./form.html" class="navigation__item-form"> </a>
+        <a href="#" class="navigation__item-profile--filled"> </a>
+      </nav>
+    </footer>
+    <script src="./js/settings.js"></script>
   </body>
 </html>
