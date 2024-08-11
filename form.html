@@ -22,22 +22,40 @@
               name="your_question"
               id="your_question"
               maxlength="150"
+              class="form-container__form-body__your_question"
               required
             ></textarea>
-
-            <p id="characters-left"></p>
+            <p id="characters-left" class="your_question__characters-left"></p>
           </div>
           <div>
             <label for="your_answer">Your Answer:</label>
-            <textarea name="your_answer" id="your_answer"></textarea>
-            <span id="characters-left-answer"></span>
+            <textarea
+              name="your_answer"
+              id="your_answer"
+              maxlength="150"
+              class="form-container__form-body__your_answer"
+            ></textarea>
+            <span
+              id="characters-left-answer"
+              class="your_answer__characters-left"
+            ></span>
           </div>
           <div>
             <label for="tag">Tag:</label>
-            <input type="text" id="tag" name="tag" />
+            <input
+              type="text"
+              id="tag"
+              name="tag"
+              class="form-container__form-body__tag"
+            />
           </div>
 
-          <button type="submit" id="submit" data-js="submit-button">
+          <button
+            type="submit"
+            id="submit"
+            data-js="submit-button"
+            class="form-container__form-body__submit"
+          >
             Submit
           </button>
         </form>

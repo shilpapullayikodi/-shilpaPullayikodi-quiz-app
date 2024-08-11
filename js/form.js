@@ -46,10 +46,21 @@ function createQuestionCard(data) {
   questionCard.append(questionSection);
   // ---------------------------------- //
 
-  answerButton = document.createElement("button");
-  answerButton.classList.add("question-cards__question-card__button");
-  answerButton.textContent = "Hide Answer";
-  questionCard.append(answerButton);
+  answerHideButton = document.createElement("button");
+  answerHideButton.classList.add("question-cards__question-card__button");
+  answerHideButton.textContent = "Hide Answer";
+  questionCard.append(answerHideButton);
+
+  answerHideButton.addEventListener("click", () => {
+    answerHideButton.classList.remove("question-cards__question-card__answer");
+    answerHideButton.classList.add(
+      "question-cards__question-card__answer--hidden"
+    );
+    answerHideButton.classList.add("question-cards__question-card__answer");
+    answerHideButton.classList.remove(
+      "question-cards__question-card__answer--hidden"
+    );
+  });
 
   // Answer
   answerSection = document.createElement("section");

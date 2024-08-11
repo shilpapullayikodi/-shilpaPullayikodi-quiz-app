@@ -36,4 +36,34 @@ label {
 
 .form-container__form-body label {
   width: 100%;
+  padding: 12px 20px;
+  margin: 2px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.your_question__characters-left,
+.your_answer__characters-left {
+  align-items: center;
+  font-style: italic;
+  font-size: small;
+  color: gray;
+  display: flex;
+  justify-content: space-around;
+}
+.form-container__form-body__your_question,
+.form-container__form-body__your_answer,
+.form-container__form-body__tag {
+  margin: 3px auto;
+  display: flex;
+  align-items: center;
+}
+.form-container__form-body__tag {
+  width: 50%;
+}
+.form-container__form-body__submit {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
 }
