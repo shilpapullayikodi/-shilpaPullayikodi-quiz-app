@@ -1,13 +1,24 @@
-//const question = document.querySelector(['data-js="question"']);
-const questionCardShowButton = document.querySelector(
-  '[data-js="js-show-button-1"]'
-);
-const questionHideButton = document.querySelector(
-  '[data-js="js-hide-button-1"]'
-);
-const showAnswer = document.querySelector('[data-js= "show-answer-1"]');
+document
+  .querySelector('[data-js="js-show-button-1"]')
+  .addEventListener("click", () => {
+    showAnswerFunc();
+  });
 
-questionCardShowButton.addEventListener("click", () => {
+document
+  .querySelector('[data-js="js-hide-button-1"]')
+  .addEventListener("click", () => {
+    hideAnswerFunc();
+  });
+
+function showAnswerFunc() {
+  let showAnswer = document.querySelector('[data-js= "show-answer-1"]');
+  let questionCardShowButton = document.querySelector(
+    '[data-js="js-show-button-1"]'
+  );
+  let questionHideButton = document.querySelector(
+    '[data-js="js-hide-button-1"]'
+  );
+
   showAnswer.classList.add("question-cards__question-card__answer");
   showAnswer.classList.remove("question-cards__question-card__answer--hidden");
 
@@ -22,9 +33,17 @@ questionCardShowButton.addEventListener("click", () => {
   questionHideButton.classList.remove(
     "question-cards__question-card__button--hidden"
   );
-});
+}
 
-questionHideButton.addEventListener("click", () => {
+function hideAnswerFunc() {
+  let showAnswer = document.querySelector('[data-js= "show-answer-1"]');
+  let questionHideButton = document.querySelector(
+    '[data-js="js-hide-button-1"]'
+  );
+  let questionCardShowButton = document.querySelector(
+    '[data-js="js-show-button-1"]'
+  );
+
   showAnswer.classList.remove("question-cards__question-card__answer");
   showAnswer.classList.add("question-cards__question-card__answer--hidden");
   questionHideButton.classList.add(
@@ -36,4 +55,4 @@ questionHideButton.addEventListener("click", () => {
   questionCardShowButton.classList.remove(
     "question-cards__question-card__button--hidden"
   );
-});
+}

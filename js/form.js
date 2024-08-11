@@ -48,23 +48,24 @@ function createQuestionCard(data) {
 
   answerHideButton = document.createElement("button");
   answerHideButton.classList.add("question-cards__question-card__button");
+  answerHideButton.setAttribute("data-js", "js-hide-button-1");
+  answerHideButton.setAttribute("onclick", "hideAnswerFunc();"); //call hidefunction when the button is click
   answerHideButton.textContent = "Hide Answer";
   questionCard.append(answerHideButton);
 
-  answerHideButton.addEventListener("click", () => {
-    answerHideButton.classList.remove("question-cards__question-card__answer");
-    answerHideButton.classList.add(
-      "question-cards__question-card__answer--hidden"
-    );
-    answerHideButton.classList.add("question-cards__question-card__answer");
-    answerHideButton.classList.remove(
-      "question-cards__question-card__answer--hidden"
-    );
-  });
+  answerShowButton = document.createElement("button");
+  answerShowButton.classList.add(
+    "question-cards__question-card__button--hidden"
+  );
+  answerShowButton.setAttribute("data-js", "js-show-button-1");
+  answerShowButton.setAttribute("onclick", "showAnswerFunc();");
+  answerShowButton.textContent = "Show Answer";
+  questionCard.append(answerShowButton);
 
   // Answer
   answerSection = document.createElement("section");
   answerSection.classList.add("question-cards__question-card__answer");
+  answerSection.setAttribute("data-js", "show-answer-1");
 
   answer = document.createElement("p");
   answer.textContent = data.your_answer; //fetch answer from data object with key yourAnswer
